@@ -1,0 +1,14 @@
+DELETE FROM `configs` WHERE `key` = 'site_infomation';
+
+INSERT INTO `configs` (`key`, `value`, `createdAt`, `updatedAt`)
+VALUES
+(
+  'site_infomation',
+  '{
+    "site_name": "TT868",
+    "site_description": "TT868 Online",
+    "site_keyword": "tt868, casino, games"
+  }',
+  NOW(),
+  NOW()
+);
